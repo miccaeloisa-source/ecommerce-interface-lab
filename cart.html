@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-items" aria-labelledby="cart-heading">
+            <h1 id="cart-heading">Your Shopping Cart</h1>
+            <ul>
+                <li>
+                    <img src="2a3e8993-6360-4aee-99ee-26fb270d8da5.jpg" alt="Product 1">
+                    <h3>Blush</h3>
+                    <p>$35</p>
+                    <label for="qty1">Quantity:</label>
+                    <input type="number" id="qty1" name="quantity" min="1" value="1">
+                </li>
+            </ul>
+        </section>
+
+        <section class="cart-summary" aria-labelledby="summary-heading">
+            <h2 id="summary-heading">Cart Summary</h2>
+            <p>Subtotal: $35</p>
+            <a href="checkout.html" role="button" aria-label="Proceed to checkout">Proceed to Checkout</a>
+        </section>
+
+        <section class="cart-items" aria-labelledby="cart-heading">
+            <h1 id="cart-heading">Your Shopping Cart</h1>
+            <ul>
+                <li>
+                    <img src="5a9a45dc-593b-4f77-84bc-9a278fe6cd93.jpg" alt="Product 1">
+                    <h3>Eyeshadow</h3>
+                    <p>$50</p>
+                    <label for="qty1">Quantity:</label>
+                    <input type="number" id="qty1" name="quantity" min="1" value="1">
+                </li>
+            </ul>
+        </section>
+
+        <section class="cart-summary" aria-labelledby="summary-heading">
+            <h2 id="summary-heading">Cart Summary</h2>
+            <p>Subtotal: $50</p>
+            <a href="checkout.html" role="button" aria-label="Proceed to checkout">Proceed to Checkout</a>
+        </section>
+
+        <section class="empty-cart" aria-labelledby="empty-heading" style="display: none;">
+            <h1 id="empty-heading">Your cart is currently empty</h1>
+            <p><a href="products.html">Start shopping</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 E-Commerce Site</p>
+    </footer>
+</body>
+</html>
