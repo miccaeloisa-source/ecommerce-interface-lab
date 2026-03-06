@@ -6,66 +6,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Our Products</h1>
-    <nav>
-        <a href="landing.html">Home</a>
-    </nav>
-</header>
+    <div class="products-layout">
+        <aside>
+            <h2>Filter Products</h2>
+            <form>
+                <fieldset>
+                    <legend>Category</legend>
+                    <label><input type="checkbox" name="category"> Foundation</label><br>
+                    <label><input type="checkbox" name="category"> Eye shadow</label><br>
+                    <label><input type="checkbox" name="category"> Concealer</label>
+                </fieldset>
+                <button type="submit">Apply Filters</button>
+            </form>
+        </aside>
 
-<main>
-    <section>
-        <h2>Product List</h2>
+        <main>
+            <h2>Product List</h2>
+            <div class="product-grid"> <article>
+                    <img src="lipstick.jpg" alt="Lipstick">
+                    <h3>Lipstick and Gloss</h3>
+                    <p class="price">120</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </article>
+                <article>
+                    <img src="foundation.jpg" alt="Foundation">
+                    <h3>Foundation</h3>
+                    <p class="price">200</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </article>
+                <article>
+                    <img src="eyeshadow.jpg" alt="Eye Shadow">
+                    <h3>Eye Shadow</h3>
+                    <p class="price">50</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </article>
+                <article>
+                    <img src="concealer.jpg" alt="Concealer">
+                    <h3>Concealer</h3>
+                    <p class="price">45</p>
+                    <a href="detail.html" class="btn">View Details</a>
+                </article>
+            </div>
+        </main>
+    </div>
 
-        <article>
-            <img src="" alt="Lipstick and Gloss">
-            <h3>lipstick and Gloss</h3>
-            <p>Price: $120</p>
-            <a href="detail.html">View Details</a>
-        </article>
-
-        <article>
-            <img src="" alt="Foundation">
-            <h3>Foundation</h3>
-            <p>Price: $200</p>
-            <a href="detail.html">View Details</a>
-        </article>
-
-        <article>
-            <img src="" alt="Eye shadow">
-            <h3>Eye Shadow</h3>
-            <p>Price: $50</p>
-            <a href="detail.html">View Details</a>
-        </article>
-
-    </section>
-
-    <aside>
-        <h2>Filter Products</h2>
-        <form>
-            <fieldset>
-                <legend>Category</legend>
-                <label><input type="checkbox" name="category" value="electronics"> Foundation</label><br>
-                <label><input type="checkbox" name="category" value="clothing"> Eye shadow</label><br>
-                <label><input type="checkbox" name="category" value="accessories"> concealer</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Price Range</legend>
-                <label><input type="radio" name="price" value="low"> Under $50</label><br>
-                <label><input type="radio" name="price" value="mid"> $50 - $150</label><br>
-                <label><input type="radio" name="price" value="high"> Above $150</label>
-            </fieldset>
-
-            <button type="submit">Apply Filters</button>
-        </form>
-    </aside>
-</main>
-
-<footer>
-    <p>&copy; 2026 M.R COLLECTION</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2026 M.R COLLECTION</p>
+    </footer>
 </body>
 </html>
