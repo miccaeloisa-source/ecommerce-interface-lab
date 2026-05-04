@@ -11,23 +11,17 @@
         <nav><ul><li><a href="landing.html">Home</a></li></ul></nav>
     </header>
 
-    <main class="checkout-container"> <section class="shipping">
-            <form>
-                <fieldset>
-                    <legend>Shipping Address</legend>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
-                    <label for="street">Street:</label>
-                    <input type="text" id="street" required>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Payment</legend>
-                    <label><input type="radio" name="pay" required> Credit Card</label>
-                </fieldset>
-                <button type="submit">Place Order</button>
-            </form>
-        </section>
+<form id="checkout-form">
+    <fieldset>
+        <legend>Shipping Address</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street">
+    </fieldset>
+    <button type="submit">Place Order</button>
+</form>
 
         <aside class="order-summary">
             <h2>Order Summary</h2>
@@ -36,5 +30,6 @@
     </main>
 
     <footer><p>&copy; 2026 M.R COLLECTION</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
