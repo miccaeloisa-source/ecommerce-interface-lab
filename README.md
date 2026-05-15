@@ -49,4 +49,61 @@ MySQL database with products table.
 <img width="1310" height="625" alt="Screenshot 2026-05-15 131853" src="https://github.com/user-attachments/assets/2644c78f-c603-49de-86bc-f93fca5c01d1" />
 <img width="1323" height="664" alt="Screenshot 2026-05-15 131923" src="https://github.com/user-attachments/assets/08b08067-36d1-43d7-b6f5-9c59f6dd978c" />
 
+# Ecommerce API Security Lab
+
+## Features Implemented
+
+- Spring Security
+- Authentication
+- Authorization
+- Role-Based Access Control (RBAC)
+- Bean Validation
+- Global Exception Handling
+
+## Public Endpoints
+
+GET /api/v1/products
+
+POST /api/v1/auth/register
+
+## Protected Endpoints
+
+POST /orders
+
+## Admin Endpoints
+
+DELETE /api/v1/admin/products/{id}
+
+## Authentication
+
+Uses HTTP Basic Authentication.
+
+### Admin Account
+
+username: admin  
+password: admin123
+
+### User Account
+
+username: user  
+password: user123
+
+## Validation
+
+Implemented using:
+
+- @NotBlank
+- @Size
+- @Valid
+
+## Exception Handling
+
+Implemented using:
+
+- @ControllerAdvice
+- MethodArgumentNotValidException
+<img width="1123" height="559" alt="image" src="https://github.com/user-attachments/assets/d8567b0d-aa50-4040-9a16-d23a987c74f0" />
+<img width="1109" height="551" alt="image" src="https://github.com/user-attachments/assets/58d37e2d-9fd1-4265-af83-37e89bdd606d" />
+<img width="1114" height="545" alt="image" src="https://github.com/user-attachments/assets/cfdfe1f2-828a-405b-a5e5-aab06531aad5" />
+<img width="1102" height="554" alt="image" src="https://github.com/user-attachments/assets/9757a13c-ae73-4a81-9eb9-29e17f359cb3" />
 
